@@ -1,0 +1,341 @@
+* {
+    padding: 0px;
+    justify-items: stretch;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.item-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 600px;
+}
+
+.first-img img {
+    border-radius: 15px;
+}
+
+.first-img {
+    position: relative;
+}
+
+.item-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item-card-container {
+    padding: 2px 16px;
+}
+
+.img-card-1 {
+    background: url('./images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+
+.grid-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.grid-container .img-content {
+    width: fit-content;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-flow: wrap;
+    width: 40%;
+    height: 600px;
+}
+
+.content-img {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    position: relative;
+}
+
+/* ------------------------------------Caption Section Start -------------------------- */
+
+.cap-title {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 1rem;
+    text-align: center justify;
+    text-decoration: none;
+}
+
+.cap-desc {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin: 10px;
+    text-decoration: none;
+    line-height: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.cap-line {
+    width: fit-content;
+    height: 12px;
+    justify-items: center;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cap-content {
+    width: 100%;
+    display: flex;
+}
+
+.cap-button {
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.cap-blank {
+    flex-grow: 2;
+}
+
+.cap-button-content {
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+.icon-start {
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AFive-pointed_star.svg&psig=AOvVaw0DvpUPr_Xi1yizZHwmlMsJ&ust=1635242762072000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCOjzk5Oo5fMCFQAAAAAdAAAAABAD);
+}
+
+/* ------------------------------------Caption Section End -------------------------- */
+
+/* ------------------------------------Menu Container Start ----------------------------------------*/
+
+.menu-container {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    justify-content: center;
+}
+
+.menu-card-1 {
+    position: absolute;
+    color: black;
+    left: 3%;
+    top: 50%;
+    width: 30%;
+    height: 25%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    background-color: white;
+    opacity: 0.60;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+    -webkit-box-orient: vertical;
+}
+
+.menu-card-2 {
+    position: absolute;
+    color: black;
+    left: 35%;
+    top: 35%;
+    background-color: white;
+    opacity: 0.60;
+    width: 30%;
+    height: 50%;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.menu-card-3 {
+    position: absolute;
+    color: black;
+    left: 67%;
+    top: 50%;
+    width: 30%;
+    height: 25%;
+    background-color: white;
+    opacity: 0.60;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+.menu-card-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.menu-card-desc {
+    color: black;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* ------------------------------------Menu Container End ----------------------------------------*/
+
+/*---------------------------------- profile container start ---------------------------- */
+
+.profile-container {
+    padding: 30px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 25%;
+}
+
+.profile-container:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-radius: 15px;
+}
+
+.profile-image {
+    width: 35%;
+    height: 35%;
+}
+
+.profile-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.profile-desc {
+    font-size: small;
+    font-weight: 500;
+    text-align: center;
+}
+
+.profile-container .social-icon {
+    visibility: hidden;
+}
+
+.profile-container:hover .social-icon {
+    visibility: visible;
+}
+
+/*---------------------------------- profile container End ---------------------------- */
+
+/* --------------------------------Food Guide Start -------------------------------- */
+
+.top-left-container {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.top-right-container {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.bottom-left-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.bottom-right-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+.centered {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+  }
+.food-icon{
+    width: 35%;
+    height: 35%;   
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.food-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.food-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+    font-size: 0.8rem;
+}
+/* --------------------------------Food Guide Start -------------------------------- */
